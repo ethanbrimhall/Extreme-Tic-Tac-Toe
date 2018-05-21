@@ -1,0 +1,214 @@
+<html>
+	<head>
+        <script src="ttt.js"></script>
+		<style>
+			.Square {
+				width: 40px;
+				height: 40px;
+				text-align: center;
+				font-size: 18pt;
+				font-weight: bold;
+				font-family: Verdana;
+			}
+            #table1{
+                float: left;
+                border-right: 5px solid black;
+                border-bottom: 5px solid black;
+            }
+            #table2{
+                float: left;
+                border-right: 5px solid black;
+                border-bottom: 5px solid black;
+            }#table3{
+                display: inline-block;
+                border-bottom: 5px solid black;
+            }#table4{
+                float: left;
+                border-right: 5px solid black;
+                border-bottom: 5px solid black;
+            }#table5{
+                float: left;
+                border-right: 5px solid black;
+                border-bottom: 5px solid black;
+            }#table6{
+                display: inline-block;
+                border-bottom: 5px solid black;
+            }#table7{
+                float: left;
+                border-right: 5px solid black;
+            }#table8{
+                float: left;
+                border-right: 5px solid black;
+            }#table9{
+                display: inline-block;
+            }
+            
+		</style>
+
+		
+	</head>
+
+	<body onload="startGame();">
+		<h1>Extreme Tic Tac Toe</h1>
+		
+		<div id="message">messages will go here</div>
+        
+		<table border="1" id = "table1">
+			<tr>
+				<td id="a1" class="Square" onclick="nextMove(this, 1);"></td>
+				<td id="a2" class="Square" onclick="nextMove(this, 1);"></td>
+				<td id="a3" class="Square" onclick="nextMove(this, 1);"></td>
+			</tr>
+			<tr>
+				<td id="a4" class="Square" onclick="nextMove(this, 1);"></td>
+				<td id="a5" class="Square" onclick="nextMove(this, 1);"></td>
+				<td id="a6" class="Square" onclick="nextMove(this, 1);"></td>
+			</tr>
+			<tr>
+				<td id="a7" class="Square" onclick="nextMove(this, 1);"></td>
+				<td id="a8" class="Square" onclick="nextMove(this, 1);"></td>
+				<td id="a9" class="Square" onclick="nextMove(this, 1);"></td>
+			</tr>
+		</table>
+        <table border="1" id = "table2">
+			<tr>
+				<td id="b1" class="Square" onclick="nextMove(this, 2);"></td>
+				<td id="b2" class="Square" onclick="nextMove(this, 2);"></td>
+				<td id="b3" class="Square" onclick="nextMove(this, 2);"></td>
+			</tr>
+			<tr>
+				<td id="b4" class="Square" onclick="nextMove(this, 2);"></td>
+				<td id="b5" class="Square" onclick="nextMove(this, 2);"></td>
+				<td id="b6" class="Square" onclick="nextMove(this, 2);"></td>
+			</tr>
+			<tr>
+				<td id="b7" class="Square" onclick="nextMove(this, 2);"></td>
+				<td id="b8" class="Square" onclick="nextMove(this, 2);"></td>
+				<td id="b9" class="Square" onclick="nextMove(this, 2);"></td>
+			</tr>
+		</table>
+        <table border="1" id = "table3">
+			<tr>
+				<td id="c1" class="Square" onclick="nextMove(this, 3);"></td>
+				<td id="c2" class="Square" onclick="nextMove(this, 3);"></td>
+				<td id="c3" class="Square" onclick="nextMove(this, 3);"></td>
+			</tr>
+			<tr>
+				<td id="c4" class="Square" onclick="nextMove(this, 3);"></td>
+				<td id="c5" class="Square" onclick="nextMove(this, 3);"></td>
+				<td id="c6" class="Square" onclick="nextMove(this, 3);"></td>
+			</tr>
+			<tr>
+				<td id="c7" class="Square" onclick="nextMove(this, 3);"></td>
+				<td id="c8" class="Square" onclick="nextMove(this, 3);"></td>
+				<td id="c9" class="Square" onclick="nextMove(this, 3);"></td>
+			</tr>
+		</table>
+        <br/>
+        <table border="1" id = "table4">
+			<tr>
+				<td id="d1" class="Square" onclick="nextMove(this, 4);"></td>
+				<td id="d2" class="Square" onclick="nextMove(this, 4);"></td>
+				<td id="d3" class="Square" onclick="nextMove(this, 4);"></td>
+			</tr>
+			<tr>
+				<td id="d4" class="Square" onclick="nextMove(this, 4);"></td>
+				<td id="d5" class="Square" onclick="nextMove(this, 4);"></td>
+				<td id="d6" class="Square" onclick="nextMove(this, 4);"></td>
+			</tr>
+			<tr>
+				<td id="d7" class="Square" onclick="nextMove(this, 4);"></td>
+				<td id="d8" class="Square" onclick="nextMove(this, 4);"></td>
+				<td id="d9" class="Square" onclick="nextMove(this, 4);"></td>
+			</tr>
+		</table>
+        <table border="1" id = "table5">
+			<tr>
+				<td id="e1" class="Square" onclick="nextMove(this, 5);"></td>
+				<td id="e2" class="Square" onclick="nextMove(this, 5);"></td>
+				<td id="e3" class="Square" onclick="nextMove(this, 5);"></td>
+			</tr>
+			<tr>
+				<td id="e4" class="Square" onclick="nextMove(this, 5);"></td>
+				<td id="e5" class="Square" onclick="nextMove(this, 5);"></td>
+				<td id="e6" class="Square" onclick="nextMove(this, 5);"></td>
+			</tr>
+			<tr>
+				<td id="e7" class="Square" onclick="nextMove(this, 5);"></td>
+				<td id="e8" class="Square" onclick="nextMove(this, 5);"></td>
+				<td id="e9" class="Square" onclick="nextMove(this, 5);"></td>
+			</tr>
+		</table>
+        <table border="1" id = "table6">
+			<tr>
+				<td id="f1" class="Square" onclick="nextMove(this, 6);"></td>
+				<td id="f2" class="Square" onclick="nextMove(this, 6);"></td>
+				<td id="f3" class="Square" onclick="nextMove(this, 6);"></td>
+			</tr>
+			<tr>
+				<td id="f4" class="Square" onclick="nextMove(this, 6);"></td>
+				<td id="f5" class="Square" onclick="nextMove(this, 6);"></td>
+				<td id="f6" class="Square" onclick="nextMove(this, 6);"></td>
+			</tr>
+			<tr>
+				<td id="f7" class="Square" onclick="nextMove(this, 6);"></td>
+				<td id="f8" class="Square" onclick="nextMove(this, 6);"></td>
+				<td id="f9" class="Square" onclick="nextMove(this, 6);"></td>
+			</tr>
+		</table>
+        <br/>
+        <table border="1" id = "table7">
+			<tr>
+				<td id="g1" class="Square" onclick="nextMove(this, 7);"></td>
+				<td id="g2" class="Square" onclick="nextMove(this, 7);"></td>
+				<td id="g3" class="Square" onclick="nextMove(this, 7);"></td>
+			</tr>
+			<tr>
+				<td id="g4" class="Square" onclick="nextMove(this, 7);"></td>
+				<td id="g5" class="Square" onclick="nextMove(this, 7);"></td>
+				<td id="g6" class="Square" onclick="nextMove(this, 7);"></td>
+			</tr>
+			<tr>
+				<td id="g7" class="Square" onclick="nextMove(this, 7);"></td>
+				<td id="g8" class="Square" onclick="nextMove(this, 7);"></td>
+				<td id="g9" class="Square" onclick="nextMove(this, 7);"></td>
+			</tr>
+		</table>
+        <table border="1" id = "table8">
+			<tr>
+				<td id="h1" class="Square" onclick="nextMove(this, 8);"></td>
+				<td id="h2" class="Square" onclick="nextMove(this, 8);"></td>
+				<td id="h3" class="Square" onclick="nextMove(this, 8);"></td>
+			</tr>
+			<tr>
+				<td id="h4" class="Square" onclick="nextMove(this, 8);"></td>
+				<td id="h5" class="Square" onclick="nextMove(this, 8);"></td>
+				<td id="h6" class="Square" onclick="nextMove(this, 8);"></td>
+			</tr>
+			<tr>
+				<td id="h7" class="Square" onclick="nextMove(this, 8);"></td>
+				<td id="h8" class="Square" onclick="nextMove(this, 8);"></td>
+				<td id="h9" class="Square" onclick="nextMove(this, 8);"></td>
+			</tr>
+		</table>
+        <table border="1" id = "table9">
+			<tr>
+				<td id="i1" class="Square" onclick="nextMove(this, 9);"></td>
+				<td id="i2" class="Square" onclick="nextMove(this, 9);"></td>
+				<td id="i3" class="Square" onclick="nextMove(this, 9);"></td>
+			</tr>
+			<tr>
+				<td id="i4" class="Square" onclick="nextMove(this, 9);"></td>
+				<td id="i5" class="Square" onclick="nextMove(this, 9);"></td>
+				<td id="i6" class="Square" onclick="nextMove(this, 9);"></td>
+			</tr>
+			<tr>
+				<td id="i7" class="Square" onclick="nextMove(this, 9);"></td>
+				<td id="i8" class="Square" onclick="nextMove(this, 9);"></td>
+				<td id="i9" class="Square" onclick="nextMove(this, 9);"></td>
+			</tr>
+		</table>
+        <br/>
+		<a href="javascript:startGame();">Start Over</a>
+	</body>
+</html>
